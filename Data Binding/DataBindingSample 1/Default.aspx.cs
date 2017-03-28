@@ -68,6 +68,24 @@ namespace DataBindingSample_1
         }
         protected void Add_Contact_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlCommand command = new SqlCommand("INSERT INTO Contacts (FirstName, LastName, Email, Phone)VALUES(@FirstName, @LastName, @Email, @Phone)", _connection);
+                // Инициализация переменных в запросе.
+                command.Parameters.AddWithValue("FirstName", FirstNameTexbox.Text);
+                command.Parameters.AddWithValue("LastName", LastNameTextBox.Text);
+                command.Parameters.AddWithValue("Email", EmailTextBox.Text);
+                command.Parameters.AddWithValue("Phone", PhoneTextBox.Text);
+
+                // Выполнение запроса.
+                command.ExecuteNonQuery();
+                AddingMessage.Text = $"{FirstNameTexbox.Text} {LastNameTextBox.Text} added to contacts list";
+            }
+            catch (Exception ex)
+            {
+                AddingMessage.Text = "Error:<br />" + ex.Message;
+                AddingMessage.ForeColor = Color.Red;
+            }
 
         }
 
