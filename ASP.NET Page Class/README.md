@@ -27,13 +27,8 @@ The following table lists the page life-cycle events that you will use most freq
 
 |Page Event|Typical Use|
 |-----------------|--------------------|
-|PreInit|Raised after the start stage is complete and before the initialization stage begins.
-Use this event for the following:
-* Check the IsPostBack property to determine whether this is the first time the page is being processed. The IsCallback and IsCrossPagePostBack properties have also been set at this time.
-* Create or re-create dynamic controls.
-* Set a master page dynamically.
-* Set the Theme property dynamically.
-* Read or set profile property values.|
+|PreInit| Raised after the start stage is complete and before the initialization stage begins.
+Use this event for the following: **1** Check the IsPostBack property to determine whether this is the first time the page is being processed. The IsCallback and IsCrossPagePostBack properties have also been set at this time. **2** Create or re-create dynamic controls. **3** Set a master page dynamically. **4** Set the Theme property dynamically. **5** Read or set profile property values.|
 |Init|Raised after all controls have been initialized and any skin settings have been applied. The Init event of individual controls occurs before the Init event of the page.
 Use this event to read or initialize control properties.|
 |InitComplete|Raised at the end of the page's initialization stage. Only one operation takes place between the Init and InitComplete events: tracking of view state changes is turned on. View state tracking enables controls to persist any values that are programmatically added to the ViewState collection. Until view state tracking is turned on, any values added to view state are lost across postbacks. Controls typically turn on view state tracking immediately after they raise their Init event.
