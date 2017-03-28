@@ -82,5 +82,43 @@ The following are the server-side state management options that ASP.NET supports
 
 > **Session state**
 
+### Application State
+
+ASP.NET provides application state via the HttpApplicationState class as a method of storing global application-specific information that is visible to the entire application. Application-state variables are, in effect, global variables for an ASP.NET application. Data that is shared by multiple sessions and does not change often is the ideal type of data to insert into application-state variables.
+
+
+> **Advantages of using application state are:**
+
+* **Simple implementation**   Application state is easy to use, familiar to ASP developers, and consistent with other .NET Framework classes.
+* **Application scope**   Because application state is accessible to all pages in an application, storing information in application state can mean keeping only a single copy of the information (for instance, as opposed to keeping copies of information in session state or in individual pages).
+
+> **Disadvantages of using application state are:**
+
+* **Application scope**   The scope of application state can also be a disadvantage. Variables stored in application state are global only to the particular process the application is running in, and each application process can have different values. Therefore, you cannot rely on application state to store unique values or update global counters in Web-garden and Web-farm server configurations.
+* **Limited durability of data**   Because global data that is stored in application state is volatile, it will be lost if the Web server process containing it is destroyed, such as from a server crash, upgrade, or shutdown.
+* **Resource requirements**   Application state requires server memory, which can affect the performance of the server as well as the scalability of the application.
+
+### Session State
+
+ASP.NET provides a session state, which is available as the HttpSessionState class, as a method of storing session-specific information that is visible only within the session. ASP.NET session state identifies requests from the same browser during a limited time window as a session, and provides the ability to persist variable values for the duration of that session.
+You can store your session-specific values and objects in session state, which is then managed by the server and available to the browser or client device. The ideal data to store in session-state variables is short-lived, sensitive data that is specific to an individual session.
+
+> **Advantages of using session state are:**
+
+* **Simple implementation**   The session-state facility is easy to use, familiar to ASP developers, and consistent with other .NET Framework classes.
+* **Session-specific events**   Session management events can be raised and used by your application.
+* **Data persistence**   Data placed in session-state variables can be preserved through Internet Information Services (IIS) restarts and worker-process restarts without losing session data because the data is stored in another process space. Additionally, session-state data can be persisted across multiple processes, such as in a Web farm or a Web garden.
+* **Platform scalability**   Session state can be used in both multi-computer and multi-process configurations, therefore optimizing scalability scenarios.
+* **Cookieless support**   Session state works with browsers that do not support HTTP cookies, although session state is most commonly used with cookies to provide user identification facilities to a Web application. Using session state without cookies, however, requires that the session identifier be placed in the query string, which is subject to the security issues stated in the query string section of this topic. For more information about using session state without cookies, see ASP.NET Web Site Administration.
+* **Extensibility**   You can customize and extend session state by writing your own session-state provider. Session state data can then be stored in a custom data format in a variety of data storage mechanisms, such as a database, an XML file, or even to a Web service. For more information, see Implementing a Session-State Store Provider.
+
+> **Disadvantage of using session state are:**
+
+* **Performance considerations**   Session-state variables stay in memory until they are either removed or replaced, and therefore can degrade server performance. Session-state variables that contain blocks of information, such as large datasets, can adversely affect Web-server performance as server load increases.
+
+
+
+
+
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 
