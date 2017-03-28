@@ -94,13 +94,13 @@ namespace DataBindingSample_1 {
         protected global::System.Web.UI.WebControls.Label AddingMessage;
         
         /// <summary>
-        /// TextBox4 control.
+        /// RemoveIDTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox RemoveIDTextBox;
         
         /// <summary>
         /// DeleteContact control.

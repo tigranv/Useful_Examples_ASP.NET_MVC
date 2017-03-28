@@ -29,7 +29,7 @@
                 </td>
                 <td class="auto-style3">Result</td>
                 <td colspan="2">
-                    <asp:Label ID="ShowContact" runat="server" Text="Show Contact" ViewStateMode="Enabled"></asp:Label>
+                    <asp:Label ID="ShowContact" runat="server" Text="Show Contact" EnableViewState="False" Visible="False"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@
                     <asp:Button ID="Add_Contact" runat="server" Text="Add Contact" OnClick="Add_Contact_Click" />
                 </td>
                 <td class="auto-style3">
-                    <asp:Label ID="AddingMessage" runat="server" Text="Adding message" ViewStateMode="Enabled"></asp:Label>
+                    <asp:Label ID="AddingMessage" runat="server" Text="Adding message" EnableViewState="False" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td>&nbsp;</td>
@@ -83,13 +83,13 @@
             <tr>
                 <td class="auto-style5">&nbsp;Delete by Id</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox4" runat="server" Width="36px"></asp:TextBox>
+                    <asp:TextBox ID="RemoveIDTextBox" runat="server" Width="36px"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Button ID="DeleteContact" runat="server" Text="Delete Contact" OnClick="DeleteContact_Click" />
                 </td>
                 <td>
-                    <asp:Label ID="DeletingMessage" runat="server" Text="DeletingMessage" ViewStateMode="Enabled"></asp:Label>
+                    <asp:Label ID="DeletingMessage" runat="server" Text="DeletingMessage" EnableViewState="False" Visible="False"></asp:Label>
                 </td>
             </tr>
         </table>

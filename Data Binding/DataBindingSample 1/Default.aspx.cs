@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace DataBindingSample_1
 {
@@ -51,6 +46,7 @@ namespace DataBindingSample_1
                     result += "<br />";
                 }
                 ShowContact.Text = result;
+                ShowContact.Visible = true;
             }
             catch (Exception ex)
             {
@@ -71,26 +67,46 @@ namespace DataBindingSample_1
             try
             {
                 SqlCommand command = new SqlCommand("INSERT INTO Contacts (FirstName, LastName, Email, Phone)VALUES(@FirstName, @LastName, @Email, @Phone)", _connection);
-                // Инициализация переменных в запросе.
                 command.Parameters.AddWithValue("FirstName", FirstNameTexbox.Text);
                 command.Parameters.AddWithValue("LastName", LastNameTextBox.Text);
                 command.Parameters.AddWithValue("Email", EmailTextBox.Text);
                 command.Parameters.AddWithValue("Phone", PhoneTextBox.Text);
 
-                // Выполнение запроса.
                 command.ExecuteNonQuery();
-                AddingMessage.Text = $"{FirstNameTexbox.Text} {LastNameTextBox.Text} added to contacts list";
+                AddingMessage.Text = $"{FirstNameTexbox.Text}    {LastNameTextBox.Text} added to contacts list";
+                AddingMessage.Visible = true;
             }
             catch (Exception ex)
             {
                 AddingMessage.Text = "Error:<br />" + ex.Message;
                 AddingMessage.ForeColor = Color.Red;
+                AddingMessage.Visible = true;
             }
 
         }
 
         protected void DeleteContact_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlCommand command = new SqlCommand("DELETE FROM Contacts WHERE ID=@Id", _connection);
+
+                command.Parameters.AddWithValue("ID", RemoveIDTextBox.Text);
+
+                int affectedRows = command.ExecuteNonQuery();
+
+                string script = string.Format("alert('deleted {0} lines');", affectedRows);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "MessageBox", script, true);
+
+                DeletingMessage.Text = $" contact with ID - {RemoveIDTextBox.Text} deleted";
+                DeletingMessage.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                DeletingMessage.Text = "Error:<br />" + ex.Message;
+                DeletingMessage.ForeColor = Color.Red;
+                DeletingMessage.Visible = true;
+            }
 
         }
 
