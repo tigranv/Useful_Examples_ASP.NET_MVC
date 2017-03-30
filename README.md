@@ -3,5 +3,7 @@
 
 1. [**ASP.NET State Managment** (Authentication Sample)](https://github.com/tigranv/Useful_Examples_ASP.NET/tree/master/State%20Managment) 
 
+2. [**ASP.NET Page Class** (PageEvenst)](https://github.com/tigranv/Useful_Examples_ASP.NET/tree/master/ASP.NET%20Page%20Class) 
+
 
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
