@@ -12,22 +12,18 @@
 </head>
 <body>
     <div> 
-        <h3> All links</h3>
+        <h3> All links (home About)</h3>
         <br />
         <br />
         <br />
         @Html.RouteLink("Home", new { controller = "Home", action = "Index" })
         @Html.RouteLink("About", new { controller = "Home", action = "About" })
         @Html.RouteLink("Contacts", new { controller = "Home", action = "Contacts"})
-        @Html.RouteLink("Home", new { controller = "Home", action = "Index", area = "Admin" })
-        @Html.RouteLink("Home", new { controller = "Products", action = "Index", area = "Admin" })
-        @Html.RouteLink("Home", new { controller = "Home", action = "Index", area = "Admin" })
-        @Html.RouteLink("Home", new { controller = "Home", action = "Index", area = "Admin" })
-        @Html.RouteLink("Home", new { controller = "Home", action = "Index", area = "Admin" })
-
-
-
-
+        @Html.RouteLink("Admin Home Index", new { controller = "Home", action = "Index", area = "Admin" })
+        @Html.RouteLink("Admin products Index", new { controller = "Products", action = "Index", area = "Admin" })
+        @Html.RouteLink("Admin products Create", new { controller = "Products", action = "Create", area = "Admin" })
+        @Html.RouteLink("Admin products Delete", new { controller = "Products", action = "Delete", area = "Admin" })
+       
     </div>
 </body>
 </html>
