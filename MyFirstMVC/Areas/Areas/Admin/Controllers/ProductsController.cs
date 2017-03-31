@@ -14,12 +14,14 @@ namespace Areas.Areas.Admin.Controllers
             return View();
         }
 
-        public ActionResult Create()
+        public ActionResult Delete()
         {
             return View();
         }
 
-        public ActionResult Delete()
+       
+
+        public ActionResult Create()
         {
             return View();
         }
