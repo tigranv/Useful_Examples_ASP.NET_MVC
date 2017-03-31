@@ -1,0 +1,27 @@
+﻿
+@model IEnumerable<WebApplication1.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        
+        @foreach(var item in Model)
+        {
+            <ul>
+                <li> @item.ID, @item.Name, @item.Price </li>
+            </ul>
+        }
+
+    </div>
+</body>
+</html>
