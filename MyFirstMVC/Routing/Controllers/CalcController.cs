@@ -8,7 +8,14 @@ namespace Routing.Controllers
 {
     public class CalcController : Controller
     {
+
         // GET: Calc
+
+        public ActionResult View(int? x, int? y)
+        {
+           
+            return View();
+        }
         public ActionResult Add(int? x, int? y)
         {
             if (x != null && y != null)

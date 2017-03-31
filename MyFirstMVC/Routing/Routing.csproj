@@ -138,6 +138,7 @@
     <Content Include="Views\Calc\Mul.cshtml" />
     <Content Include="Views\Calc\Sub.cshtml" />
     <Content Include="Views\Calc\Div.cshtml" />
+    <Content Include="Views\Calc\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

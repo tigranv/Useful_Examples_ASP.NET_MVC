@@ -16,7 +16,7 @@ namespace Routing
             routes.MapRoute(
                 name: "Calc",
                 url: "{controller}/{action}/{x}/{y}",
-                defaults: new { controller = "Calc", action = "Add", x = 0, y = 0}
+                defaults: new { controller = "Calc", action = "View", x = 0, y = 0}
             );
         }
     }
