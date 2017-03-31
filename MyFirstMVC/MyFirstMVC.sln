@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic", "Basic\Basic.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.csproj", "{17F77ACD-5F9E-492B-88A8-7393779BA23C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Areas", "Areas\Areas.csproj", "{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{17F77ACD-5F9E-492B-88A8-7393779BA23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F77ACD-5F9E-492B-88A8-7393779BA23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17F77ACD-5F9E-492B-88A8-7393779BA23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

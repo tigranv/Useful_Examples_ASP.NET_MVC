@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+    <div> 
+        <h3> All links</h3>
+        <br />
+        <br />
+        <br />
+        @Html.RouteLink("Home", new { controller = "Home", action = "Index" })
+        @Html.RouteLink("About", new { controller = "Home", action = "About" })
+        @Html.RouteLink("Contacts", new { controller = "Home", action = "Contacts"})
+        @Html.RouteLink("Home", new { controller = "Home", action = "Index", area = "Admin" })
+
+
+
+
+    </div>
+</body>
+</html>
