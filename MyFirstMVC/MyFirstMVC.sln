@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Areas", "Areas\Areas.csproj", "{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreemanFirstMVC", "FreemanFirstMVC\FreemanFirstMVC.csproj", "{3421F68E-7DD2-4FE8-8A94-11C89EBE788D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD8A13AE-F7EE-4F5D-9DEA-62F568A186CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3421F68E-7DD2-4FE8-8A94-11C89EBE788D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3421F68E-7DD2-4FE8-8A94-11C89EBE788D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3421F68E-7DD2-4FE8-8A94-11C89EBE788D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3421F68E-7DD2-4FE8-8A94-11C89EBE788D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
