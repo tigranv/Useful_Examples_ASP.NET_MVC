@@ -21,7 +21,7 @@
 <body>
 
     @{
-        try
+        @*try
         {
             WebMail.SmtpServer = "smtp.example.com";
             WebMail.SmtpPort = 587;
@@ -35,7 +35,7 @@
         catch (Exception)
         {
             @:<b>Sorry - we couldn't send the email to confirm your RSVP.</b>        
-        }
+        }*@
     }
 
 
