@@ -42,7 +42,7 @@ namespace Picturesfromurl.Controllers
             return Excellent_Method(AllUrls).Result;
         }
 
-        public async Task<IHttpActionResult> Excellent_Method(List<string> coll)
+        public async Task<IHttpActionResult> Excellent_Method(List<string> coll) 
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage mes = new HttpResponseMessage();
