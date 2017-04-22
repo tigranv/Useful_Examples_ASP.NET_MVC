@@ -45,7 +45,6 @@ namespace Picturesfromurl.Controllers
         public async Task<IHttpActionResult> Excellent_Method(List<string> coll) 
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage mes = new HttpResponseMessage();
             List<Node> list = new List<Node>();
             foreach (string s in coll)
             {
