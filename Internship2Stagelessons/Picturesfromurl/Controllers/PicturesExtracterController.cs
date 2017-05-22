@@ -57,7 +57,7 @@ namespace Picturesfromurl.Controllers
         public IHttpActionResult MM(List<string> coll)
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage mes = new HttpResponseMessage();
+            // HttpResponseMessage mes = new HttpResponseMessage();
             List<byte[]> list = new List<byte[]>();
             foreach (string s in coll)
             {

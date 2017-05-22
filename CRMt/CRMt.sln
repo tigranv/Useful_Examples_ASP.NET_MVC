@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{84E7BDC0-82A2-4E99-B1B8-2144B750D157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0AA23FCF-7984-466E-B761-64A45FCA9C9E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CRMtDatabase", "src\CRMtDatabase\CRMtDatabase.sqlproj", "{03007FB6-A992-4C6A-ABC1-416642CC39EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.EntityF", "src\CRM.EntityF\CRM.EntityF.csproj", "{E426C703-CC19-43F6-BEA6-46A0D02D678B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.WebApit", "CRM.WebApit\CRM.WebApit.csproj", "{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserClassLib", "src\ParserClassLib\ParserClassLib.csproj", "{A837A65F-4457-44E8-B386-02C62605AEC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E426C703-CC19-43F6-BEA6-46A0D02D678B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E426C703-CC19-43F6-BEA6-46A0D02D678B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E426C703-CC19-43F6-BEA6-46A0D02D678B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E426C703-CC19-43F6-BEA6-46A0D02D678B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A837A65F-4457-44E8-B386-02C62605AEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A837A65F-4457-44E8-B386-02C62605AEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A837A65F-4457-44E8-B386-02C62605AEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A837A65F-4457-44E8-B386-02C62605AEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03007FB6-A992-4C6A-ABC1-416642CC39EA} = {84E7BDC0-82A2-4E99-B1B8-2144B750D157}
+		{E426C703-CC19-43F6-BEA6-46A0D02D678B} = {84E7BDC0-82A2-4E99-B1B8-2144B750D157}
+		{FF52616E-7BE7-42CD-9101-E5EF36A8E8BF} = {84E7BDC0-82A2-4E99-B1B8-2144B750D157}
+		{A837A65F-4457-44E8-B386-02C62605AEC9} = {84E7BDC0-82A2-4E99-B1B8-2144B750D157}
+	EndGlobalSection
+EndGlobal
